@@ -1,6 +1,12 @@
 <html>
     <title>Speed Test Website</title>
-    <body>
-        <h1>Allah Hu Akbar</h1>
-    </body>>
+    <body align="center">
+        <h1 id="text" onclick="a()">0</h1>
+    </body>
+    <script>
+        function a(){
+            var t = document.getElementById("text");
+            t.innerHTML = parseInt(t.innerHTML) + 1;
+        }
+    </script>
 </html>
