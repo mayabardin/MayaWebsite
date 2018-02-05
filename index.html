@@ -63,7 +63,7 @@
             for (c=0; c<sparkles; c++) if (!starv[c]) {
               star[c].style.left=(starx[c]=x)+"px";
               star[c].style.top=(stary[c]=y)+"px";
-              star[c].style.clip="rect(0px, 5px, 5px, 0px)";
+              star[c].style.clip="rect(0px, 15px, 15px, 0px)";
               star[c].style.visibility="visible";
               starv[c]=50;
               break;
@@ -77,7 +77,7 @@
         }
         
         function update_star(i) {
-          if (--starv[i]==25) star[i].style.clip="rect(1px, 4px, 4px, 1px)";
+          if (--starv[i]==25) star[i].style.clip="rect(1px, 10px, 10px, 1px)";
           if (starv[i]) {
             stary[i]+=1+Math.random()*3;
             if (stary[i]<shigh+sdown) {
@@ -176,8 +176,8 @@
         }
         // ]]>
         </script>
-   
-
+   <marquee onMouseover=”this.scrollAmount=2″ onMouseout=”this.scrollAmount=8″ height=”34″ 
+   width=”713″>please help me</marquee>
     <script>
 
         function a(){
